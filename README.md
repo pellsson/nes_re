@@ -8,7 +8,7 @@ Algorithm to compute GDV (Game Deviation Value) in Solomon's key.
 
 `GDV = (((has_page_of_space + has_page_of_time + 1 + (fairies/10) + saved_princess) * 2 + beaten_levels + solomon_seals) * 2 + hard_levels) / 8 + max(5, score/100000) + has_solomons_key + 47`
 
-FCEUX script to show real-time GDV.
+[FCEUX script to show real-time GDV.](https://github.com/pellsson/nes_re/blob/master/solomons_key/gdv.lua)
 
 ### Interesting GDV-Bug
 Bits `#$40` and `#$80` at address `$78` dictate "collected status" for the "Page of Space" and the "Page of Time" respectively. Both pages are included in the algorithm and count towards your GDV, but, are both unconditionally overwritten at the instance you press a button to see your GDV score at the end of the game (Buggy code at `$BD62`).
@@ -28,5 +28,5 @@ To patch the bug use Game Genie code `OZTLXS`.
 
 ## Hydlide Password Generator
 
-See the code.
+[Hydlide Password Generator in C.](https://github.com/pellsson/nes_re/blob/master/hydlide/keygen.c)
 
