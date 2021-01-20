@@ -6,7 +6,7 @@ Random NES reverse-engineering...
 
 Algorithm to compute GDV (Game Deviation Value) in Solomon's key.
 
-`GDV = (((has_page_of_space + has_page_of_time + 1 + (fairies/10) + saved_princess) * 2 + beaten_levels + solomon_seals) * 2 + hard_levels) / 8 + max(5, score/100000) + has_solomons_key + 47`
+`GDV = (((has_page_of_space + has_page_of_time + 1 + (fairies/10) + saved_princess) * 2 + beaten_levels + solomon_seals) * 2 + hard_levels) / 8 + min(5, score/100000) + has_solomons_key + 47`
 
 [FCEUX script to show real-time GDV.](https://github.com/pellsson/nes_re/blob/master/solomons_key/gdv.lua)
 
